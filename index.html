@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#131211"/>
+
+  <title>MAISON NOIR — Fine Fragrances & Luxury Perfumes</title>
+  <meta name="description" content="Maison Noir crafts exceptional fine fragrances composed with intention. Discover signature scents that become a part of your story."/>
+  <meta name="robots" content="index, follow"/>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="MAISON NOIR — Fine Fragrances"/>
+  <meta property="og:description" content="Exceptional fragrances, composed with intention. Discover scents that become a part of your story."/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1541643600914-78b084683702?w=1200&q=85&auto=format"/>
+  <meta property="og:url" content="https://maisonnoir.com"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23131211'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='13' fill='%23B69A68'%3EMN%3C/text%3E%3C/svg%3E"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap"/>
+
+  <link rel="preload" as="image" href="assets/images/hero.jpg" fetchpriority="high"/>
+
+  <link rel="stylesheet" href="dist/assets/styles.min.css"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     ANNOUNCEMENT BAR
+     ═══════════════════════════════════════════════════════ -->
+<div class="ann-bar" aria-label="Store announcement">
+  Complimentary delivery on orders above <strong style="color:var(--color-gold)">$100</strong> &ensp;·&ensp; Worldwide shipping
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAVIGATION
+     ═══════════════════════════════════════════════════════ -->
+<header>
+  <nav class="nav-main" aria-label="Main navigation">
+    <div class="nav-inner">
+
+      <a href="#top" class="nav-wordmark" aria-label="Maison Noir — home">Maison Noir</a>
+
+      <div class="nav-links-desktop" style="display:flex;align-items:center;gap:clamp(2rem,3vw,3.5rem)">
+        <a href="#collection" class="nav-link">Fragrances</a>
+        <a href="#story" class="nav-link">Our Story</a>
+        <a href="#notes" class="nav-link">The Art of Scent</a>
+      </div>
+
+      <div class="nav-cta-desktop" style="display:flex;align-items:center;gap:1.5rem">
+        <a href="#collection" class="nav-cta">Discover Your Scent</a>
+      </div>
+
+      <button id="menu-toggle" class="hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <a href="#collection">Fragrances</a>
+  <a href="#story">Our Story</a>
+  <a href="#notes">The Art of Scent</a>
+  <a href="#collection" style="font-size:0.7rem;font-family:var(--font-body);letter-spacing:0.14em;text-transform:uppercase;margin-top:1rem;padding:0.8rem 2rem;border:0.5px solid var(--color-border)">Discover Your Scent</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO — The Signature Experience
+     ═══════════════════════════════════════════════════════ -->
+<main>
+<section id="top" class="hero" aria-label="Hero">
+
+  <!-- Text Side -->
+  <div class="hero-text">
+    <div class="hero-eyebrow">The Art of Fine Fragrance</div>
+
+    <h1 class="hero-headline">
+      Leave a trace.<br/><em>Not a noise.</em>
+    </h1>
+
+    <p class="hero-sub">
+      Exceptional fragrances, composed with intention. Discover scents that become a part of your story.
+    </p>
+
+    <div class="hero-ctas" style="display:flex;flex-wrap:wrap;align-items:center;gap:1rem">
+      <a href="#collection" class="btn-primary">
+        Explore the Collection
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#story" class="btn-ghost">Our Philosophy</a>
+    </div>
+  </div>
+
+  <!-- Image Side -->
+  <div class="hero-img-wrap">
+    <img
+      src="assets/images/hero.jpg"
+      alt="Maison Noir Paris signature crystal perfume bottle with brushed antique gold cap resting on dark charcoal slate plinth"
+      width="1400" height="1050"
+      fetchpriority="high" loading="eager"
+    />
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="scroll-hint" aria-hidden="true">
+    <span class="scroll-hint-text">Scroll</span>
+    <svg width="1" height="32" viewBox="0 0 1 32"><line x1="0.5" y1="0" x2="0.5" y2="32" stroke="var(--color-muted)" stroke-width="1" opacity="0.4"/></svg>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     COLLECTION HEADER
+     ═══════════════════════════════════════════════════════ -->
+<section id="collection" class="section-pad" style="background:var(--color-ivory)" aria-label="Signature collection">
+  <div style="max-width:1400px;margin:0 auto">
+
+    <div class="section-header reveal">
+      <p class="eyebrow" style="margin-bottom:1rem">The Signature Collection</p>
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+        <h2 class="section-title">
+          Find your<br/><em style="font-style:italic;color:var(--color-muted)">signature.</em>
+        </h2>
+        <p style="font-size:0.82rem;line-height:1.7;color:var(--color-muted);max-width:300px">
+          Three distinct compositions. Three different ways to be remembered.
+        </p>
+      </div>
+      <div class="gold-rule" style="margin-top:2rem"></div>
+    </div>
+
+    <!-- Fragrance Grid — Editorial 3-column -->
+    <div class="frag-grid stagger">
+
+      <!-- AMBRE NOIR -->
+      <article class="frag-card reveal" aria-label="Ambre Noir fragrance">
+        <a href="#" data-product="ambre-noir" aria-label="View Ambre Noir details">
+          <div class="frag-card-img">
+            <img
+              src="assets/images/ambre-noir.jpg"
+              alt="Ambre Noir — warm amber perfume in a dark glass bottle"
+              width="700" height="933" loading="lazy"
+            />
+          </div>
+        </a>
+        <div class="frag-card-meta">
+          <h3 class="frag-card-name">Ambre Noir</h3>
+          <span class="frag-card-price">$195</span>
+        </div>
+        <p class="frag-card-desc">Warm amber, cedarwood, and soft spice. A quiet authority that lingers.</p>
+        <a href="#" data-product="ambre-noir" class="frag-card-link">
+          Discover
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- FIG & VETIVER -->
+      <article class="frag-card reveal" aria-label="Fig and Vetiver fragrance">
+        <a href="#" data-product="fig-vetiver" aria-label="View Fig and Vetiver details">
+          <div class="frag-card-img">
+            <img
+              src="assets/images/fig-vetiver.jpg"
+              alt="Fig and Vetiver — earthy botanical perfume"
+              width="700" height="933" loading="lazy"
+            />
+          </div>
+        </a>
+        <div class="frag-card-meta">
+          <h3 class="frag-card-name">Fig &amp; Vetiver</h3>
+          <span class="frag-card-price">$175</span>
+        </div>
+        <p class="frag-card-desc">Green fig, earthy vetiver, and dry woods. Quietly confident.</p>
+        <a href="#" data-product="fig-vetiver" class="frag-card-link">
+          Discover
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- ROSE OBSIDIENNE -->
+      <article class="frag-card reveal" aria-label="Rose Obsidienne fragrance">
+        <a href="#" data-product="rose-obsidienne" aria-label="View Rose Obsidienne details">
+          <div class="frag-card-img">
+            <img
+              src="assets/images/rose-obsidienne.jpg"
+              alt="Rose Obsidienne — dark rose and smoky musk perfume"
+              width="700" height="933" loading="lazy"
+            />
+          </div>
+        </a>
+        <div class="frag-card-meta">
+          <h3 class="frag-card-name">Rose Obsidienne</h3>
+          <span class="frag-card-price">$215</span>
+        </div>
+        <p class="frag-card-desc">Dark rose, black pepper, and smoky musk. Unforgettable.</p>
+        <a href="#" data-product="rose-obsidienne" class="frag-card-link">
+          Discover
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     BRAND STORY — Cinematic Split
+     ═══════════════════════════════════════════════════════ -->
+<section id="story" class="story-section" aria-label="Brand story">
+
+  <!-- Image -->
+  <div class="story-img reveal-left">
+    <img
+      src="assets/images/craftsmanship.jpg"
+      alt="Master perfumer's Parisian atelier with amber glass apothecary bottles and antique balance scale"
+      width="1000" height="750" loading="lazy"
+    />
+  </div>
+
+  <!-- Text -->
+  <div class="story-text reveal-right">
+    <p class="eyebrow" style="margin-bottom:1.5rem">The Philosophy</p>
+
+    <h2 class="story-heading">
+      Made to be<br/><em>remembered.</em>
+    </h2>
+
+    <div class="gold-rule" style="margin-bottom:2rem"></div>
+
+    <p class="story-body">
+      We believe fragrance is more than a finishing touch. It is a memory, a feeling, and a quiet expression of who you are.
+    </p>
+    <p class="story-body" style="margin-bottom:2.5rem">
+      Every Maison Noir composition is designed to unfold slowly, leaving a presence long after the moment has passed. Each formula is developed in small batches, with raw materials sourced from the world's most respected fragrance houses.
+    </p>
+
+    <a href="#notes" class="btn-ghost" style="color:rgba(245,240,230,0.5);border-color:rgba(245,240,230,0.15);align-self:flex-start">
+      The Maison Noir Philosophy
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     INTERLUDE — Quote
+     ═══════════════════════════════════════════════════════ -->
+<div class="interlude" aria-hidden="true">
+  <div class="reveal">
+    <div class="gold-rule" style="margin:0 auto 2rem"></div>
+    <blockquote>
+      <p class="interlude-quote">"A fragrance should not shout. It should be discovered."</p>
+      <footer><cite class="interlude-cite">— Maison Noir</cite></footer>
+    </blockquote>
+    <div class="gold-rule" style="margin:2rem auto 0"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     THE ART OF SCENT — Fragrance Notes
+     ═══════════════════════════════════════════════════════ -->
+<section id="notes" class="notes-section section-pad" aria-label="The art of scent — fragrance notes">
+  <div style="max-width:1400px;margin:0 auto">
+
+    <div class="section-header reveal" style="text-align:center">
+      <p class="eyebrow" style="margin-bottom:1rem">The Art of Scent</p>
+      <h2 class="section-title" style="margin:0 auto 1rem">
+        First impression.<br/><em style="font-style:italic;color:var(--color-muted)">Lasting memory.</em>
+      </h2>
+      <p style="font-size:0.82rem;line-height:1.7;color:var(--color-muted);max-width:480px;margin:0 auto">
+        A fine fragrance is not a single moment — it is a composition that evolves through three movements over hours on the skin.
+      </p>
+    </div>
+
+    <!-- Three-Phase Timeline -->
+    <div class="notes-timeline reveal">
+
+      <!-- Top Notes -->
+      <div class="note-phase">
+        <div class="note-number">I</div>
+        <p class="eyebrow" style="margin-bottom:0.75rem">Opening</p>
+        <h3 class="note-label">Top Notes</h3>
+        <p class="note-desc">
+          The first breath — light, volatile, immediate. The invitation to lean closer.
+        </p>
+        <div class="note-ingredients">
+          <span class="note-tag">Bergamot</span>
+          <span class="note-tag">Black Pepper</span>
+          <span class="note-tag">Green Fig</span>
+          <span class="note-tag">Saffron</span>
+        </div>
+        <p style="font-size:0.65rem;color:var(--color-gold);letter-spacing:0.08em;margin-top:1.2rem">15–30 minutes</p>
+      </div>
+
+      <!-- Heart Notes -->
+      <div class="note-phase">
+        <div class="note-number">II</div>
+        <p class="eyebrow" style="margin-bottom:0.75rem">The Character</p>
+        <h3 class="note-label">Heart Notes</h3>
+        <p class="note-desc">
+          The soul of the composition revealed — what the fragrance truly is.
+        </p>
+        <div class="note-ingredients">
+          <span class="note-tag">Damask Rose</span>
+          <span class="note-tag">Iris</span>
+          <span class="note-tag">Cedarwood</span>
+          <span class="note-tag">Vetiver</span>
+        </div>
+        <p style="font-size:0.65rem;color:var(--color-gold);letter-spacing:0.08em;margin-top:1.2rem">1–4 hours</p>
+      </div>
+
+      <!-- Base Notes -->
+      <div class="note-phase">
+        <div class="note-number">III</div>
+        <p class="eyebrow" style="margin-bottom:0.75rem">The Memory</p>
+        <h3 class="note-label">Base Notes</h3>
+        <p class="note-desc">
+          The lasting trace — warm, rich, and deeply personal. Hours after the moment has passed.
+        </p>
+        <div class="note-ingredients">
+          <span class="note-tag">Amber</span>
+          <span class="note-tag">Oud</span>
+          <span class="note-tag">Musk</span>
+          <span class="note-tag">Sandalwood</span>
+        </div>
+        <p style="font-size:0.65rem;color:var(--color-gold);letter-spacing:0.08em;margin-top:1.2rem">6–12 hours</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     EDITORIAL IMAGE STRIP
+     ═══════════════════════════════════════════════════════ -->
+<div class="reveal" style="position:relative;height:clamp(280px,40vh,500px);overflow:hidden;background:var(--color-charcoal)" aria-hidden="true">
+  <img
+    src="assets/images/editorial-interlude.jpg"
+    alt="" role="presentation"
+    width="1800" height="500" loading="lazy"
+    style="width:100%;height:100%;object-fit:cover;opacity:0.65"
+  />
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     SIGNATURE CTA
+     ═══════════════════════════════════════════════════════ -->
+<section class="cta-section" aria-label="Explore the collection">
+  <div class="reveal" style="position:relative;z-index:1">
+    <p class="eyebrow" style="margin-bottom:1.5rem">Begin Your Journey</p>
+
+    <h2 class="cta-heading">
+      Your next signature<br/><em>scent awaits.</em>
+    </h2>
+
+    <p class="cta-sub">
+      Discover a fragrance that feels unmistakably yours. Each composition is offered in a 5ml Discovery Size.
+    </p>
+
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem">
+      <a href="#collection" class="btn-primary" style="border-color:var(--color-gold)">Explore All Fragrances</a>
+      <a href="#story" class="btn-ghost" style="color:rgba(245,240,230,0.4);border-color:rgba(245,240,230,0.15)">Our Philosophy</a>
+    </div>
+
+    <!-- MN monogram -->
+    <div style="margin-top:4rem;display:flex;align-items:center;justify-content:center;gap:1.5rem">
+      <div style="width:60px;height:0.5px;background:rgba(182,154,104,0.15)"></div>
+      <span style="font-family:var(--font-display);font-size:1.2rem;color:rgba(182,154,104,0.2);font-style:italic">mn</span>
+      <div style="width:60px;height:0.5px;background:rgba(182,154,104,0.15)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════ -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div>
+        <a href="#top" class="footer-wordmark">Maison Noir</a>
+        <p class="footer-tagline">Fine fragrances, composed with intention. Made to leave a trace.</p>
+        <div style="display:flex;gap:0.5rem">
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Pinterest">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12c0-3.3 1.8-5 4-5s3.5 1.5 3.5 3.5c0 3-1.5 5-3.5 5-1 0-1.7-.5-1.7-1.5"/><path d="M9.5 15l1-4"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="X (Twitter)">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231L6.055 21.75H2.747l7.73-8.835L2.25 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigate -->
+      <div>
+        <h3 class="footer-col-title">Navigate</h3>
+        <nav aria-label="Footer navigation">
+          <a href="#collection" class="footer-link">Fragrances</a>
+          <a href="#story" class="footer-link">Our Story</a>
+          <a href="#notes" class="footer-link">The Art of Scent</a>
+          <a href="#" class="footer-link">Discovery Sets</a>
+        </nav>
+      </div>
+
+      <!-- Help -->
+      <div>
+        <h3 class="footer-col-title">Help</h3>
+        <a href="#" class="footer-link">Shipping &amp; Returns</a>
+        <a href="#" class="footer-link">FAQ</a>
+        <a href="#" class="footer-link">Gift Cards</a>
+        <a href="#" class="footer-link">Size Guide</a>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="footer-col-title">Contact</h3>
+        <a href="mailto:hello@maisonnoir.com" class="footer-link">hello@maisonnoir.com</a>
+        <p class="footer-link" style="cursor:default">12 Rue du Faubourg<br/>Paris 75008</p>
+        <p class="footer-link" style="cursor:default">Mon–Fri, 9am–6pm CET</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2024 Maison Noir. All rights reserved.</p>
+      <div style="display:flex;gap:1.5rem">
+        <a href="#" class="footer-link" style="font-size:0.6rem">Privacy Policy</a>
+        <a href="#" class="footer-link" style="font-size:0.6rem">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════════════
+     PRODUCT MODAL
+     ═══════════════════════════════════════════════════════ -->
+<div id="product-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Product detail">
+  <div id="modal-body"></div>
+</div>
+
+<script src="dist/assets/main.min.js" defer></script>
+</body>
+</html>
